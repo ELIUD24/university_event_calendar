@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.student-btn {
+    background-color: #007BFF;
+    color: white;
+}
+
+.staff-btn {
+    background-color: #28A745;
+    color: white;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.event-card {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: white;
+}
+.upcoming-events {
+    text-align: center;
+    background-color: #f8f9fa; /* Light grey for a clean look */
+    padding: 60px 20px; /* Added padding for spacing */
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Ensures enough height */
+}
+
+.upcoming-events h1 {
+    color: #0f3d2e; /* Dark green */
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.upcoming-events p {
+    color: #333;
+    font-size: 1.2em;
+    max-width: 900px;
+    margin: 0 auto;
+}
+

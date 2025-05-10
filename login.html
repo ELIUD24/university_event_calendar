@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="login-title">Login</h2>
+        <form action="login_handler.php" method="POST">
+            <input type="email" name="email" placeholder="Email / Reg No" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>New user? <a href="signup.html">Sign up here</a></p>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const role = urlParams.get('role');
+        document.getElementById("role").value = role;
+        document.getElementById("login-title").innerText = role === 'student' ? "Student Login" : "Staff Login";
+    </script>
+</body>
+</html>

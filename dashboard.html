@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Event Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <!-- Logo / Brand Name -->
+        <a class="navbar-brand fw-bold" href="#">University Event Calendar</a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="dashboard.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.php">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="privacy.html">Privacy Policy</a>
+                </li>
+
+                <!-- User Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Welcome, <span id="user-name">User</span> 
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="logout.php">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Navbar -->
+
+
+    <div>
+    <div class="upcoming-events">
+        <h1>Upcoming Events and Activities</h1>
+        <p>Stay informed about the latest university events and activities. Join us as we celebrate milestones, academic achievements, and cultural diversity through various engaging programs and initiatives.</p>
+    </div>
+    
+
+        <div class="row">
+            <!-- Academic Events -->
+            <div class="col-md-4">
+                <div class="event-card">
+                    <img src="Academic Event.jpeg" alt="Academic Event">
+                    <h4>Academic Events</h4>
+                    <p>Engage with insightful lectures, seminars, and workshops tailored to inspire excellence.</p>
+                    <a href="events.php?category=academic" class="btn btn-primary">View More</a>
+                </div>
+            </div>
+
+            <!-- Cultural Events -->
+            <div class="col-md-4">
+                <div class="event-card">
+                    <img src="Cultural Events.jpg" alt="Cultural Event">
+                    <h4>Cultural Events</h4>
+                    <p>Experience cultural exhibitions, performances, and interactive sessions celebrating creativity.</p>
+                    <a href="events.php?category=cultural" class="btn btn-success">Discover More</a>
+                </div>
+            </div>
+
+            <!-- Sports Events -->
+            <div class="col-md-4">
+                <div class="event-card">
+                    <img src="Sports Event.jpeg" alt="Sports Event">
+                    <h4>Sports Events</h4>
+                    <p>Join thrilling sports events that promote health, teamwork, and sportsmanship.</p>
+                    <a href="events.php?category=sports" class="btn btn-info">Explore Events</a>
+                </div>
+            </div>
+
+            <!-- Technology Events -->
+            <div class="col-md-4">
+                <div class="event-card">
+                    <img src="Tech.jpeg" alt="Tech Event">
+                    <h4>Technology Events</h4>
+                    <p>Discover the latest in tech innovations, AI, and programming competitions.</p>
+                    <a href="events.php?category=technology" class="btn btn-warning">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Spiritual Events -->
+            <div class="col-md-4">
+                <div class="event-card">
+                    <img src="Spiritual.jpeg" alt="Spiritual Event">
+                    <h4>Spiritual Events</h4>
+                    <p>Find peace and spiritual growth with our community-led sessions.</p>
+                    <a href="events.php?category=spiritual" class="btn btn-gold">Find Peace</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- University Information -->
+                <div class="col-md-4">
+                    <h4>University Event Calendar</h4>
+                    <p>Stay connected and updated on all upcoming events at the university.</p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="dashboard.html">Home</a></li>
+                        <li><a href="dashboard.html">Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact & Social Media -->
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p>Email: support@kabarakuniversityevents.com</p>
+                    <p>Phone: +254795177217</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
