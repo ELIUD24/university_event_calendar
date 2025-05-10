@@ -41,6 +41,8 @@ $result = $stmt->get_result();
                         <p><strong>Date:</strong> <?= $row['date'] ?></p>
                         <p><strong>Time:</strong> <?= $row['time'] ?></p>
                         <p><strong>Location:</strong> <?= $row['location'] ?></p>
+                        <p><strong>Link:</strong><?= $row['link']?></p>
+                        <p><strong>Status:</strong><?= ucfirst($row['status'])?></p>
                         <p><?= $row['description'] ?></p>
                         <button class="btn btn-primary">Book Now</button>
                     </div>
